@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project Manager's Book</title>
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./pmbook.css">
+</head>
+<body>
+    <div class="row col-12">
+        <nav class="header">
+            <span class="logo">Join.To.IT</span>
+        </nav>
+    </div>
+<div class="container">
+    <div class="row"> 
+        <div class="sidebar col-2">
+            <ul class="ul-sidebar">
+                <li class="li-sidebar">
+                    <a href="#1" class="a-sidebar">Who is a PM at Join.To.IT</a>
+                </li>
+                <li class="li-sidebar">
+                    <a href="#2" class="a-sidebar">Trello</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content offset-3">
+            <div class="text-block" id="1">
+                <span class="main-title">1. Who is a Project Manager at Join.To.IT<br></span>
+                <hr>
+                <span class="sub-title">General<br></span>
+                <span class="text-content">
+                    <p><br>The role of the Project Manager in JTI is to ensure that projects are delivered smoothly on-time and on-budget with minimal unexpected stoppages and risk in work.</p>
+                    <p>Imagine that you are the client who requested service from Join.To.IT. Would you like to know what has been done so far on your project? Would you like to see updates on a server and don’t have any issues? Would you like to pay for a great job and give us more and more projects if you are satisfied with our service? I believe, yes.</p>
+                    <p>Imagine that you are a developer managed by a PM. Would you like to get clear tasks and see feedback on each completed milestone? Would you like to get answers on your questions ASAP? Again, yes.</p>
+                    <p>Project Manager is something like a filter between a client and developers in order to get tasks, describe them and provide to developers. Also, PM is a filter on the other side, when a project is going to be shown to a client, PM should take a look on completed tasks and give to a client only those things that are done accordingly to requirements.</p>
+                    <p>You are not the only person who is interested in the realization of a project, but in order to get the project done, you should become the one who is most interested in that. Neither developers nor clients owe you anything. You should be the one who is supposed to beat the crap out them to finish a project. Developers are able to ignore you, but you should make them bring you the result. Clients also may ignore your requests but you have to get a project done so exploit them as they are your employees. You should complete the project at any effort.</p>
+                </span>
+                <span class="sub-title"><br>Details<br></span>
+                <span class="text-content">
+                    <p><br>In general PM’s duties are:</p>
+                    <p>
+                        <ol>
+                            <li>To report to client every day according to format (read #. Reports);</li>
+                            <li>To run morning stand-ups with a team (read #. Stand-Ups); </li>
+                            <li>To set up a sprint for all projects (read #. Sprints);</li>
+                            <li>To make project review minimum 1 time per week (read #. Reviews);</li>
+                            <li>To prepare projects for QA testing according to requirements and within time scales (read #11. Preparation of a Project for Testing); </li>
+                            <li>To move cards in Trello in order to keep boards in actual state;</li>
+                            <li>To attend weekly PM-QA meetings;</li>
+                            <li>To collect project requirements constantly:
+                                <ul>
+                                    <li>Make XD prototypes and putting comments there;</li>
+                                    <li>Update requirements as soon as possible once they are changed; </li>
+                                    <li>Add all materials to one folder in Gdrive;</li>
+                                    <li>Prepare required workflow models, mind-maps, users roles structure etc;</li>
+                                </ul>
+                            </li>
+                            <li>To present the project to the team when starting it (read #.  )</li>
+                            <li>Preventing risks, when they are evident </li>
+                            <li>Collecting project estimations from developers and get it confirmed by COO </li>
+                            <li>Setting up environment when project begins: Trello/RocketChat/Redmine/Gdrive Folder </li>
+                            <li>Stick to deadlines of projects</li>
+                            <li>Collecting Harvest files every Friday until 23:59 (read #. Harvest)</li>
+                        </ol>
+                    </p>
+                </span>
+            </div>
+<!--Next block-->
+            <div class="text-block" id="2">
+                <span class="main-title">2. Trello<br></span>
+                <hr>
+                <span class="sub-title">General<br></span>
+                <span class="text-content">
+                    <p>
+                        <br>Trello is a great tool dedicated to making project management easier. It allows to quickly understand what is the status of the project, every team member knows what he/she is supposed to do. Trello is based on principles of Kanban and it is very easy to use. In “Details” there is a description of what columns we have in JTI to manage projects and each column has description of what content it should consist of.]
+                    </p>
+                </span>
+                <span class="sub-title"><br>Details<br></span>
+                <span class="text-content">
+                    <p><br>Each Trello board should contain the following columns:</p>
+                    <p style="font-style: italic">Take into consideration if you want to add some column needed for your job - you are free to do that, but columns listed below are a must.</p>
+                    <p>
+                        <ol>
+                            <li><b>Backlog</b> - here we store cards are postponed to next sprints.</li>
+                            <li><b>Sprint</b> <i>(2 weeks or 1 week, depends on a project)</i> -  after the creation of a sprint with a team you have to move cards from <u>Backlog</u> or <u>Need to Fix</u> to this column. Before starting of Sprint you have to fill all related requirements to the card so a developer will know the exact task.</li>
+                            <li><b>In process</b> - once a developer starts work on some task, he has to take a card from <u>Sprint</u> in this column.</li>
+                            <li><b>Review by PM</b> - after completion of a task a developer is supposed to move the card from <u>In Process</u> here. As soon as possible you have to review cards from here and move them to the next column or back to Sprint if it is not done accordingly to requirements and describe what is wrong.</li>
+                            <li><b>Preparation for QA</b> - after successful review you are able to store completed tasks in this column and once it will make sense to test the scope of milestones - move them from here to the next column.</li>
+                            <li><b>Ready for QA</b> - here should be only tasks reviewed by you as Project Manager, with full and actual requirements, deployed to test server and ready for QA engineers to check everything deeply. </li>
+                            <li><b>Testing in Process</b> - QA engineers will take cards from Ready for QA and move them here when they are testing those cards. Depends on the result of testing they will move cards in the next two columns.</li>
+                            <li><b>Need to fix</b> - in case if functionality related to a card works not correctly, the card will be moved here by QA engineers.</li>
+                            <li><b>Ready for Acceptance Testing</b> - here QA engineers put cards that have been tested out and the verdict is positive (functionality works according to requirements) and once the whole project cards will be here - it is time to test the whole project (acceptance testing).</li>
+                            <li><b>Confirmed by QA</b> - after acceptance testing cards will be moved here in case of positive results of testing. Otherwise, cards will be moved to Need to Fix and once the whole project is debugged, it will be needed to make one more session of acceptance testing and we will have as many iterations as needed in order to have zero bugs on the project.</li>
+                        </ol>
+                    </p>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
