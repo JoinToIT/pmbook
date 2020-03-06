@@ -1,649 +1,747 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Project Manager's Book</title>
-    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./pmbook.css">
+  <meta name="keywords" content="project management, pm, it, jointoit" />
+  <meta name="description" content="Project Managers Manual" />
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./pmbook2.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <title>PM Book</title>
 </head>
 <body>
-    <div class="row col-12">
-        <nav class="header">
-            <span class="logo">Join.To.IT</span>
-        </nav>
+
+  <nav class="navbar navbar-dark sticky-top bg-dark p-10">
+    <a class="navbar-brand col-3 col-lg-2 mr-0" href="https://jointoit.com">Join.To.IT</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#Sidebar">
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="Sidebar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a href="#1" class="nav-link">1. Who is a PM at Join.To.IT</a></li>
+        <li class="nav-item"><a href="#2" class="nav-link">2. Trello</a></li>
+        <li class="nav-item"><a href="#3" class="nav-link">3. Redmine</a></li>
+        <li class="nav-item"><a href="#4" class="nav-link">4. Kickoff Checklist</a></li>
+        <li class="nav-item"><a href="#5" class="nav-link">5. Estimates</a></li>
+        <li class="nav-item"><a href="#6" class="nav-link">6. Kickoff Meeting</a></li>
+        <li class="nav-item"><a href="#7" class="nav-link">7. Sprints</a></li>
+        <li class="nav-item"><a href="#8" class="nav-link">8. Stand-Ups</a></li>
+        <li class="nav-item"><a href="#9" class="nav-link">9. Reports</a></li>
+        <li class="nav-item"><a href="#10" class="nav-link">10. Reviews</a></li>
+        <li class="nav-item"><a href="#11" class="nav-link">11. Prepare for Testing</a></li>
+        <li class="nav-item"><a href="#12" class="nav-link">12. Harvest</a></li>
+        <li class="nav-item"><a href="#13" class="nav-link">13. Planning QA Meeting</a></li>
+        <li class="nav-item"><a href="#14" class="nav-link">14. Risk Management</a></li>
+      </ul>
     </div>
-    <div class="container">
-        <div class="row"> 
-            <div class="sidebar col-2">
-                <ul class="ul-sidebar">
-                    <li class="li-sidebar"><a href="#1" class="a-sidebar">1. Who is a PM at Join.To.IT</a></li>
-                    <li class="li-sidebar"><a href="#2" class="a-sidebar">2. Trello</a></li>
-                    <li class="li-sidebar"><a href="#3" class="a-sidebar">3. Redmine</a></li>
-                    <li class="li-sidebar"><a href="#4" class="a-sidebar">4. Kickoff Checklist</a></li>
-                    <li class="li-sidebar"><a href="#5" class="a-sidebar">5. Estimates</a></li>
-                    <li class="li-sidebar"><a href="#6" class="a-sidebar">6. Kickoff Meeting</a></li>
-                    <li class="li-sidebar"><a href="#7" class="a-sidebar">7. Sprints</a></li>
-                    <li class="li-sidebar"><a href="#8" class="a-sidebar">8. Stand-Ups</a></li>
-                    <li class="li-sidebar"><a href="#9" class="a-sidebar">9. Reports</a></li>
-                    <li class="li-sidebar"><a href="#10" class="a-sidebar">10. Reviews</a></li>
-                    <li class="li-sidebar"><a href="#11" class="a-sidebar">11. Prepare for Testing</a></li>
-                    <li class="li-sidebar"><a href="#12" class="a-sidebar">12. Harvest</a></li>
-                    <li class="li-sidebar"><a href="#13" class="a-sidebar">13. Planning QA Meeting</a></li>
-                    <li class="li-sidebar"><a href="#13" class="a-sidebar">14. Risk Management</a></li>
-                </ul>
-            </div>
+  </nav>
 
-            <div class="content offset-3">
-                <!--1 block-->
-                <a class="anchor" id="1"></a>
-                <div class="text-block">
-                    <span class="main-title">1. Who is a Project Manager at Join.To.IT<br></span>
-                    <hr>
-                    <span class="sub-title">General<br></span>
-                    <span class="text-content">
-                        <p><br>The role of the Project Manager in JTI is to ensure that projects are delivered smoothly on-time and on-budget with minimal unexpected stoppages and risk in work.</p>
-                        <p>Imagine that you are the client who requested service from Join.To.IT. Would you like to know what has been done so far on your project? Would you like to see updates on a server and don’t have any issues? Would you like to pay for a great job and give us more and more projects if you are satisfied with our service? I believe, yes.</p>
-                        <p>Imagine that you are a developer managed by a PM. Would you like to get clear tasks and see feedback on each completed milestone? Would you like to get answers on your questions ASAP? Again, yes.</p>
-                        <p>Project Manager is something like a filter between a client and developers in order to get tasks, describe them and provide to developers. Also, PM is a filter on the other side, when a project is going to be shown to a client, PM should take a look on completed tasks and give to a client only those things that are done accordingly to requirements.</p>
-                        <p>You are not the only person who is interested in the realization of a project, but in order to get the project done, you should become the one who is most interested in that. Neither developers nor clients owe you anything. You should be the one who is supposed to beat the crap out them to finish a project. Developers are able to ignore you, but you should make them bring you the result. Clients also may ignore your requests but you have to get a project done so exploit them as they are your employees. You should complete the project at any effort.</p>
-                    </span>
-                    <span class="sub-title">Details<br></span>
-                    <span class="text-content">
-                        <p><br>In general PM’s duties are:</p>
-                        <p>
-                            <ol>
-                                <li>To report to client every day according to format (read #. Reports);</li>
-                                <li>To run morning stand-ups with a team (read #. Stand-Ups); </li>
-                                <li>To set up a sprint for all projects (read #. Sprints);</li>
-                                <li>To make project review minimum 1 time per week (read #. Reviews);</li>
-                                <li>To prepare projects for QA testing according to requirements and within time scales (read #11. Preparation of a Project for Testing); </li>
-                                <li>To move cards in Trello in order to keep boards in actual state;</li>
-                                <li>To attend weekly PM-QA meetings;</li>
-                                <li>To collect project requirements constantly:
-                                    <ul>
-                                        <li>Make XD prototypes and putting comments there;</li>
-                                        <li>Update requirements as soon as possible once they are changed; </li>
-                                        <li>Add all materials to one folder in Gdrive;</li>
-                                        <li>Prepare required workflow models, mind-maps, users roles structure etc;</li>
-                                    </ul>
-                                </li>
-                                <li>To present the project to the team when starting it (read #.  )</li>
-                                <li>Preventing risks, when they are evident </li>
-                                <li>Collecting project estimations from developers and get it confirmed by COO </li>
-                                <li>Setting up environment when project begins: Trello/RocketChat/Redmine/Gdrive Folder </li>
-                                <li>Stick to deadlines of projects</li>
-                                <li>Collecting Harvest files every Friday until 23:59 (read #. Harvest)</li>
-                            </ol>
-                        </p>
-                    </span>
-                    <hr>
-                </div>
-
-                <!--2 block-->
-                <a class="anchor" id="2"></a>
-                <div class="text-block">
-                    <span class="main-title">2. Trello<br></span>
-                    <hr>
-                    <span class="sub-title">General<br></span>
-                    <span class="text-content">
-                        <p>
-                            <br>Trello is a great tool dedicated to making project management easier. It allows to quickly understand what is the status of the project, every team member knows what he/she is supposed to do. Trello is based on principles of Kanban and it is very easy to use. In “Details” there is a description of what columns we have in JTI to manage projects and each column has description of what content it should consist of.
-                        </p>
-                    </span>
-                    <span class="sub-title">Details<br></span>
-                    <span class="text-content">
-                        <p><br>Each Trello board should contain the following columns:</p>
-                        <p style="font-style: italic">Take into consideration if you want to add some column needed for your job - you are free to do that, but columns listed below are a must.</p>
-                        <p>
-                            <ol>
-                                <li><b>Backlog</b> - here we store cards are postponed to next sprints.</li>
-                                <li><b>Sprint</b> <i>(2 weeks or 1 week, depends on a project)</i> -  after the creation of a sprint with a team you have to move cards from <u>Backlog</u> or <u>Need to Fix</u> to this column. Before starting of Sprint you have to fill all related requirements to the card so a developer will know the exact task.</li>
-                                <li><b>In process</b> - once a developer starts work on some task, he has to take a card from <u>Sprint</u> in this column.</li>
-                                <li><b>Review by PM</b> - after completion of a task a developer is supposed to move the card from <u>In Process</u> here. As soon as possible you have to review cards from here and move them to the next column or back to Sprint if it is not done accordingly to requirements and describe what is wrong.</li>
-                                <li><b>Preparation for QA</b> - after successful review you are able to store completed tasks in this column and once it will make sense to test the scope of milestones - move them from here to the next column.</li>
-                                <li><b>Ready for QA</b> - here should be only tasks reviewed by you as Project Manager, with full and actual requirements, deployed to test server and ready for QA engineers to check everything deeply. </li>
-                                <li><b>Testing in Process</b> - QA engineers will take cards from Ready for QA and move them here when they are testing those cards. Depends on the result of testing they will move cards in the next two columns.</li>
-                                <li><b>Need to fix</b> - in case if functionality related to a card works not correctly, the card will be moved here by QA engineers.</li>
-                                <li><b>Ready for Acceptance Testing</b> - here QA engineers put cards that have been tested out and the verdict is positive (functionality works according to requirements) and once the whole project cards will be here - it is time to test the whole project (acceptance testing).</li>
-                                <li><b>Confirmed by QA</b> - after acceptance testing cards will be moved here in case of positive results of testing. Otherwise, cards will be moved to Need to Fix and once the whole project is debugged, it will be needed to make one more session of acceptance testing and we will have as many iterations as needed in order to have zero bugs on the project.</li>
-                            </ol>
-                        </p>
-                    </span>
-                    <hr>
-                </div>
-
-                <!--3 block-->
-                <a class="anchor" id="3"></a>
-                <div class="text-block">
-                    <span class="main-title">3. Redmine<br></span>
-                    <hr>
-                    <span class="sub-title">General<br></span>
-                    <span class="text-content">
-                        <p>
-                            <br>Redmine is a good tool in order to manage projects at all, but we use it as bug-tracker.
-                        </p>
-                    </span>
-                    <span class="sub-title">Details<br></span>
-                    <span class="text-content">
-                        <p><br><b>Creation of a Project</b></p>
-                        <p> Depends on a type of a project there are three ways of creating the project in Redmine:
-                            <ul>
-                                <li>Web application</li>
-                                <li>Mobile application</li>
-                                <li>API</li>
-                            </ul>
-                        </p>
-                        <p>
-                            If a project consists of multiple types of projects listed above then you should create 1 parent project and 1 or 2 subprojects. For example, a project consists of web application, mobile app and api for mobile application and the main part is a mobile app. Anyway we count web project as main one so you have to create parent project with settings of web app projects and two subprojects, one for API and one for mobile application with related settings. Settings for each type are described below.
-                    </p>
-                    <div style="overflow-x:auto;">    
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <th></th>
-                                    <th>Modules</th>
-                                    <th>Trackers</th>
-                                    <th>Custom Fields</th>
-                                </tr>
-                                <tr>
-                                    <td>Web Application</td>
-                                    <td>
-                                        <ul>
-                                            <li>Issue tracking</li>
-                                            <li>Documents</li>
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <ul>
-                                            <li>Bug</li>
-                                            <li>Ticket</li>
-                                            <li>Review</li>
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <ul>
-                                            <li>Link to page with bug</li>
-                                            <li>Environment 1</li>
-                                            <li>Environment 2</li>
-                                            <li>Environment 3</li>
-                                            <li>Type list</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Mobile Application</td>
-                                    <td>
-                                        <ul>
-                                            <li>Issue tracking</li>
-                                            <li>Documents</li>
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <ul>
-                                            <li>Bug</li>
-                                            <li>Ticket</li>
-                                            <li>Review</li>
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <ul>
-                                            <li>Environment 1</li>
-                                            <li>Environment 2</li>
-                                            <li>Environment 3</li>
-                                            <li>Build iOS</li>
-                                            <li>Build Android</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>API</td>
-                                    <td>
-                                        <ul>
-                                            <li>Issue tracking</li>
-                                            <li>Documents</li>
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <ul>
-                                            <li>Bug</li>
-                                            <li>Ticket</li>
-                                            <li>Review</li>
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <ul>
-                                            <li>Method</li>
-                                            <li>Request URL</li>
-                                            <li>API doc link</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <p><br><b>Modules</b></p>
-                    <p><i><u>Issue tracking</i></u> - module that is dedicated to create issues and work on them, basically it is the main functionality of Redmine.</p>
-                    <p><i><u>Documents</i></u> - here you are supposed to add all documents related to a project, add links to all servers and credentials for test users, links to prototype, workflow model, history of builds, design files etc.</p>
-
-                    <p><br><b>Trackers</b></p>
-                    <p><i><u>Bug</i></u> - it is tracker where issues are created by QA engineers, bugs can be assigned to developers in order to have them fix assigned issues; to PM in case to clarify requirements; to client in order to get his reply.</p>
-                    <p><i><u>Ticket</i></u> - it is a tracker for clients, they can create issues only in this tracker.</p>
-                    <p><i><u>Review</i></u> - it is a tracker for PM in order to create issues detected during review of completed tasks.</p>
-
-                    <p><br><b>Statuses of Issues</b></p>
-                    <ol>
-                        <li><b>New</b> - all issues once created should have this status in case if it is not a pending question, then the issue should have status <u>Waiting for response</u>.</li>
-                        <li><b>In Progress</b> - if the issue take much time (more than 1hr) to be fixed a developer has to put this status during fixing it.</li>
-                        <li><b>Waiting for response</b> - if there are any questions that require answers, the issue should be created with this status or if someone needs additional information in order to resolve the issue he/she is able to put this status and assign it to a person who is capable of giving an answer.</li>
-                        <li><b>Resolved</b> - after a developer get the issue fixed he is supposed to put this status and assign to person who has to check it.</li>
-                        <li><b>Duplicate</b> - if there is another same issue team member should put this status and add link to related issue that has been duplicated and reassign back to creator or needed person.</li>
-                        <li><b>Not a bug</b> - if the issue is not a bug, a developer should put this status, explain why and assign to PM. Then PM have to confirm it and assign the issue to QA or not confirm, assign responsible developer and explain why.</li>
-                        <li><b>Additional Work</b> - if the issue is not a bug but by your opinion, it would be great to implement the feature, use this status and assign to a client to get his approval.</li>
-                        <li><b>Re-open</b> - if you or QA checked resolved issue and it is not fixed properly, this status is used, the number of re-opens of the issue should be increased by 1 (there is such a field in Redmine) and responsible developer should be assigned back to it.</li>
-                        <li><b>Confirmed by QA</b> - once QA has tested resolved issue and it is fixed - he will put this status.</li>
-                        <li><b>Closed</b> - once you have checked an issue from trackers Review or Ticket and it is resolved - put this status.</li>
-                    </ol>
-                    </span>
-                    <hr>
-                </div>
-
-                <!--4 block-->
-                <a class="anchor" id="4"></a>
-                <div class="text-block">
-                    <span class="main-title">4. Kickoff Checklist<br></span>
-                    <hr>
-                    <span class="sub-title">General<br></span>
-                    <span class="text-content">
-                        <p>
-                            <br>Before the start of any project there are required steps that Project Manager is supposed to pass. It contains a lot of general steps as well as technical requirements kind of configurations of server, time zone of users etc. This practice allows us to prevent many issues that will appear in future related to development and customer relations.
-                            <br><br><b>Current revision of the checklist is v1.1</b>
-                        </p>
-                    </span>
-                    <span class="sub-title">Details<br></span>
-                    <span class="text-content">
-                        <p>
-                            <br>There are two types of projects that we develop: web and mobile applications. API is optional and it is possible to have them in both types or also it is possible to not develop API at all. There are some differences in preparational steps so we have created two separate checklists.
-                            <br>Depends on a type of a project, go to the following links and copy needed list. If the project consists of both web and mobile application then combine both documents.
-                            <br><a href="https://docs.google.com/spreadsheets/d/1goeDhTx5RwKdK1kpDjiB-3NJPjZR2q6oOVMC-tyjOd8/" target="_blank"><u>Web applications checklist</u></a>
-                            <br><a href="https://docs.google.com/spreadsheets/d/1goeDhTx5RwKdK1kpDjiB-3NJPjZR2q6oOVMC-tyjOd8/edit#gid=1200214743/" target="_blank"><u>Mobile applications checklist</u></a>
-                            <br>If we don’t need some steps of checklist in your project - just put status “TRUE” and in column “Information” input that we don’t need it.
-                        </p>
-                    </span>
-                    <hr>
-                </div>
-
-                <!--5 block-->
-                <a class="anchor" id="5"></a>
-                <div class="text-block">
-                    <span class="main-title">5. Estimates<br></span>
-                    <hr>
-                    <span class="sub-title">General<br></span>
-                    <span class="text-content">
-                        <p>
-                            <br>You will be asked to get some projects estimated. There are two options: rough estimate and precise estimate. A task of Project Manager is to assign related developers and it is preferred to ask developers that are supposed to work on the project they estimate.
-                        </p>
-                    </span>
-                    <span class="sub-title">Details<br></span>
-                    <span class="text-content">
-                        <p>
-                            <br>Usually, rough estimates are for projects where we don’t know the exact requirements and client just wants to know the approximate price for his project. It is better to have big tasks here from 16 to 80 hours.
-                            <br>Precise estimates are for cases when we know exact requirements or at least detailed description. Tasks should be from 1 to 16 hours, as smaller hours per tasks as better.
-                            <br>    
-                            <br>After getting an estimate from developers it is required to get approval from COO or if it is not possible then from CEO or CTO. They will check the adequacy of estimation and create an estimate for the client depends on the hourly rate of developers and the hourly rate of the client. 
-                            <br>
-                            <br>Developers’ estimates are only for developers and they should be located in GDrive: 
-                            <br><code>7. Project Files/[Current year]/[Current month]/[Project Name]</code></p> 
-                            Clients estimates are located in another folder:
-                            <br><p><code>10. Project Files for Clients/[Current year]/[Current month]/[Project Name]</code></p>
-                            Clients should not know about devs’ estimate and devs should not know about the client's estimate.
-                        </p>
-                    </span>
-                    <hr>
-                </div>
-
-                <!--6 block-->
-                <a class="anchor" id="6"></a>
-                <div class="text-block">
-                    <span class="main-title">6. Kickoff Meeting<br></span>
-                    <hr>
-                    <span class="sub-title">General<br></span>
-                    <span class="text-content">
-                        <p>
-                            <br>The purpose of a project kickoff meeting is to introduce the team, understand the project background, understand what success looks like, understand what needs to be done, and agree on how to work together effectively – it’s a chance to level set and get the team and client on the same page.
-                        </p>
-                    </span>
-                    <span class="sub-title">Details<br></span>
-                    <span class="text-content">
-                        <p>
-                            <br>In order to prevent unexpected issues during development it is required to have a meeting with developers, CTO and CEO or COO to discuss the purpose of the project and choose the main ways of development and to discuss possible roadblocks.
-
-                            <br>Checklist of what items members of the meeting should walkthrough:
-                            <ol>
-                                <li>Present a project business idea to the team;</li>
-                                <li>Present materials that we have (documentation, design etc);</li>
-                                <li>Assign team members to their role on the project (who does what and what is responsible for, for example - Team Lead is Oleksii Kuharenko, he doesn’t develop anything but review code of developers and approve commits in git; Front-end developer is Oleksii Kupin, Back-end developer is Roman Sheverun);</li>
-                                <li>Walkthrough the <b>Kick-off Check-List</b>;</li>
-                                <li>Discuss project architecture (DB structure, order of development of modules, order of development of front-end and back-end).</li>
-                            </ol>
-                        </p>
-                    </span>
-                    <hr>
-                </div>
-
-                <!--7 block-->
-                <a class="anchor" id="7"></a>
-                <div class="text-block">
-                    <span class="main-title">7. Sprints<br></span>
-                    <hr>
-                    <span class="sub-title">General<br></span>
-                    <span class="text-content">
-                        <p>
-                            For each project, it should be either offline meeting with a WHOLE team of developers or call via Skype/Zoom/etc. PM has to create table with planned tasks and add related to sprint cards to Trello in column Sprint. Adding cards to Trello w/o meeting with a team will not be treated as completed Sprint. Meeting must be 20-40 minutes, no longer. On a meeting preferable to present also COO and CTO/CEO if you feel that you have serious issues on a project. Manage this risk yourself.
-                        </p>
-                    </span>
-                    <span class="sub-title">Details<br></span>
-                    <span class="text-content">
-                        <p>
-                            Sprint is 2 business weeks (though can differ, depending on a project and client requirements). Every week is 40 hours. So one developer should work 80 hours during all sprint.
-                            <br>
-                            <br>We understand that developers can’t do coding all 80 hours, that’s why we give such a plan:
-                            <br>~ 80% of time dev does coding
-                            <br>~ 15% of time dev fixes bugs
-                            <br>~ 5% of time goes for stand-up meetings, discussions, participation in interview etc.
-                            <br>
-                            <br>In numbers devs will spend during sprint:
-                            <br>~ 64 hours for coding (80%)
-                            <br>~ 12 hours for fixing bugs
-                            <br>~ 4 hours for stand-up meetings, discussions etc.
-                            <br>Proportions can slightly change from time to time
-                            <br>
-                            <br>In numbers during the day you will spend:
-                            <br>~ 6.4 hours for coding (80%)
-                            <br>~ 1.2 hours for fixing bugs
-                            <br>~ 0.4 hours for stand-up meetings, discussions etc.
-                            <br>Proportions can slightly change from time to time
-                            <br>
-                            <br>The task of project manager is to oversee that team is completing tasks due to date and the sprint is still achievable. In the end of the first week it is needed to make a check-point meeting where should be at least one top-manager (CEO/CTO/COO) and project team. If the sprint is shorter and equals 1 week - do your checkpoint on Wednesday mornings.  There you are supposed to present what tasks has been planned to be completed, actual completed tasks and reasons why we do it slower or faster if it is the case.
-                            <br>
-                            <br>At the end of the last sprint week it is required to make retrospective meeting of whole sprint and basically discuss the same questions that on the first week meeting and also create sprint for next 2 weeks.
-                        </p>
-                    </span>
-                    <hr>
-                </div>
-
-                <!--8 block-->
-                <a class="anchor" id="8"></a>
-                <div class="text-block">
-                    <span class="main-title">8. Stand-ups</span>
-                    <hr>
-                    <span class="sub-title">General</span>
-                    <span class="text-content">
-                        <p>
-                            <br>The stand-up meeting is a delicately nuanced method of project management disguised as a daily reminder that your legs work. A truly effective stand-up requires preparation, experimentation, and motivation.
-                        </p>
-                    </span>
-                    <span class="sub-title">Steps</span>
-                    <span class="text-content">
-                        <p><ol>
-                            <li>You should call to yourself a team that is assigned to the project and/or make a phone/Skype/etc conversation if the team works remotely.</li>
-                            <li>Stand-up meetings must be held starting from 10:30 am and not later</li>
-                            <li>Stand-ups should be conducted standing</li>
-                            <li>
-                                Track Progress:
-                                <ul>
-                                    <br>
-                                    <li>Check yesterday’s to-do list;</li>
-                                    <li>Ask developers what was the progress;</li>
-                                    <li>Ask what difficulties did they meet? Write down what you have to get known from clients or other parties;</li>
-                                    <li>Prepare a to-do list for today;</li>
-                                    <li>Move cards in Trello to a needed column in order to keep the board in an actual state.</li>
-                                </ul>
-                            </li>
-                            <li>Repeat everything with all teams on projects you are working on</li>
-                            <li>In mid of day (e.g. 15:00) go to the team and ask how do they progress and help in solving some issues</li>
-                            <li>At the end of the day remind developers to write reports.</li>
-                            <li>Stand-up meeting cannot last more than 10 minutes per project. All discussion must be held after the stand-up meeting during the day. Strictly follow instructions of meeting.</li>
-                        </ol></p>
-                    </span>
-                    <span class="sub-title">Tips</span>
-                    <span class="text-content">
-                        <p>
-                            <ol>
-                                <li>Look at the video where our colleagues from IBM Agile Academy show an example of a good way of holding stand-ups</li>
-                                <br><iframe width="95%" height="400px" src="https://www.youtube.com/embed/GzQjGhD5tSU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
-                                <li>At the end of the meeting, you have an opportunity to energize team members before they return to work. Share a good natured joke, a motivational quote, or even come up with your own signature sign-off.</li>
-                                <li>Stick to these three questions:
-                                    <ul>
-                                        <li>What has a recently accomplished?</li>
-                                        <li>What are my in-progress tasks and/or plans?</li>
-                                        <li>What obstacles are impeding my progress?</li>
-                                    </ul>
-                                </li>
-                                <li>Stay Focused. Every stand-up needs a leader. The person who facilitates the stand-up must balance time-awareness and flexibility.</li>
-                            </ol>
-                        </p>
-                    </span>
-                    <hr>
-                </div>
-
-                <!--9 block-->
-                <a class="anchor" id="9"></a>
-                <div class="text-block">
-                    <span class="main-title">9. Reports</span>
-                    <hr>
-                    <span class="sub-title">General</span>
-                    <span class="text-content">
-                        <p>
-                            <br>Project Manager have to send reports to clients every work day or rarer if it is approved by the COO and discussed with a client but not rarer than 2 times per week.
-                        </p>
-                    </span>
-                    <span class="sub-title">Template of a report</span>
-                    <span class="text-content">
-                        <p>
-                            <br>[# of milestone]. [name of milestone] - [status of the task in percents]
-                            <br>[# of bug]. [name of bug] - [status of the task in percents]
-                            <br>
-                            <br>If report sent rarer than every day, then you also have to add 2-3 sentences of description, what exactly was included in those milestones. For example, you can describe back-end tasks, what API endpoints are related to it etc.
-                        </p>
-                    </span>
-                    <span class="sub-title">What if we didn't work with the project, but it is time to send a report?<br></span>
-                    <span class="text-content">
-                        <p>Unfortunately, this case is a common one so you should be prepared. We have no other choice as to send fake report, for example, you can say to client that some milestone is ready on 20% and we make refactoring of code. But be very careful with it, it is a last measure, it would be great to find another solution to provide our clients some progress.
-                        <br>
-                        <br>Take into consideration that as more a client is satisfied as more money he will pay what means higher salaries, better equipment, new office and free pizza on Fridays</p>
-                    </span>
-                    <hr>
-                </div>
-
-                <!--10 block-->
-                <a class="anchor" id="10"></a>
-                <div class="text-block">
-                    <span class="main-title">10. Reviews<br></span>
-                    <hr>
-                    <span class="text-content"><p>This guide explains how Project Manager must review project before bypassing it for salary approval, QA testing or any other stage.</p></span>
-                    <span class="sub-title">Web Projects<br></span>
-                    <span class="text-content">
-                        <p>
-                            <ol>
-                                <li>check web page functionality. Make sure that it works according to the requirements</li>
-                                <li>
-                                    check more than requirements. Check best practices and be smart:
-                                    <ul>
-                                        <li>make sure that input fields have validation (email validation, mobile phone format validation etc.)</li>
-                                        <li>make sure that project follows the workflow model</li>
-                                        <li>check how all dynamic content works, especially the calculation of numbers, rates etc.</li>
-                                    </ul>
-                                </li>
-                                <li>pay attention at speed of page loading. It shouldn’t be longer than 2-4 sec</li>
-                                <li>check PSD graphic mockup with original page. It must be pixel perfect (on resolution that is equal to design) and responsive on all screens (360, 1366). Make sure that you check web page on the same screen size in emulator as you have in PSD mockup or in tools like Zeplin, Invision, Sketch, XdAdobe etc.</li>
-                            </ol>
-                        </p>
-                    </span>
-                    <span class="sub-title">Mobile App Projects</span>
-                    <span class="text-content">
-                        <p>
-                            <ol>
-                                <li>check mobile app functionality and make sure that it works according to requirements</li>
-                                <li>
-                                    check more than requirements. Check best practices and be smart:
-                                    <ul>
-                                        <li>make sure that input fields have validation (email validation, mobile phone format validation etc.)</li>
-                                        <li>make sure that project follows the workflow model</li>
-                                        <li>check how all dynamic content works, especially the calculation of numbers, rates etc.</li>
-                                    </ul>
-                                </li>
-                                <li>pay attention at speed of screen loading. It shouldn’t be longer than 2-4 sec</li>
-                                <li>check how app looks on a Landscape view and Book view (if it is available). Same on mobile phone and tablet device (if it is part of the scope)</li>
-                                <li>check PSD graphic mockup with original page. It must be pixel perfect (on resolution that is equal to design) and responsive on all screens (360, 1366). Make sure that you check web page on the same screen size in emulator as you have in PSD mockup or in tools like Zeplin, Invision, Sketch, XdAdobe etc.</li>
-                            </ol>
-                        </p>
-                    </span>
-                    <span class="text-content"><b>You must review all project (!) Not only one page. Every week you one time review all pages of your project. Doesn’t matter if they were done and perfect on previous check<br></b></span>
-                    <hr>
-                </div>
-
-                <!--11 block-->
-                <a class="anchor" id="11"></a>
-                <div class="text-block">
-                    <span class="main-title">11. Preparation of a Project for Testing<br></span>
-                    <hr>
-                    <span class="sub-title">General<br></span>
-                    <span class="text-content">
-                        <p>
-                            <br>QA is one of the most important processes in the development of any project. According to Wikipedia’s quality assurance definition, it’s “a way of preventing mistakes or defects in manufactured products and avoiding problems when delivering solutions or services to customers.” There’s more to QA than this, however. Here are just a few of the numerous benefits a QA team can bring:
-                            <ul>
-                                <li>QA teams help meet clients’ demands and expectations most fully</li>
-                                <li>They build trust with customers and beat the competition in the long run by producing a better product</li>
-                                <li>They save costs by detecting and fixing issues and flaws early in development</li>
-                                <li>They assist in setting and maintaining high quality standards and shift focus from detecting issues to their prevention</li>
-                            </ul>
-                        </p>
-                    </span>
-                    <span class="sub-title">Details</span>
-                    <span class="text-content">
-                        <p><b><br>Trello</b></p>
-                        <ol>
-                            <li>    
-                                Depends on the readiness of project documentation there are two ways:
-                                <ul>
-                                    <li>In case if there is no documentation at all or the documentation is not enough detalized - you should fill requirements in each card that will fully describe how the functionality related to the card is supposed to work.</li>
-                                    <li>In case if we have good documentation - just put in each card link to related page in documentation.</li>
-                                </ul>
-                            </li>
-                            <li>Make sure that correct developer(s) are assigned to cards you are going to give to QA.</li>
-                            <li>Add URL link to server in each card with related functionality so QA will know exactly where to find the functionality.</li>
-                            <li>Add comment “Reviewed by PM” in each card just to know that you have been reviewing the functionality.</li>
-                            <li>After everything of above is done - move needed cards to column <u>Ready for QA</u></li>
-                        </ol>
-                        <p><b><br>Redmine</b></p>
-                        <ol>
-                            <li>Add project documentation to “Documents” section in the project:
-                                <ul>
-                                    <li>Link to XD prototype;</li>
-                                    <li>Link to doc file with general purpose of the project, roles and their structure;</li>
-                                    <li>Link to workflow model (if exists);</li>
-                                    <li>Graphic design (if used);</li>
-                                    <li>Template theme (if used).</li>
-                                </ul>
-                            </li>
-                            <br><li>
-                                Add credentials:
-                                <ul>
-                                    <li>URL Link to test server (for web projects);</li>
-                                    <li>Name of the latest builds for iOS and Android (for mobile projects). Note: Add this info to section "Builds - History of Ver.";</li>
-                                    <li>Credentials to Mailtrap (if used);</li>
-                                    <li>Credentials to Stripe (if used);</li>
-                                    <li>Credentials to other third party services (if used).</li>
-                                </ul>
-                            </li>
-                            <br><li>
-                                Add testing requirements:
-                                <ul>
-                                    <li>Cross-browser compatibility (list of browsers);</li>
-                                    <li>Adaptive layout (min-max screen resolution);</li>
-                                    <li>Testing environment (list of devices).</li>
-                                </ul>
-                            </li>
-                        </ol>
-                    </span>
-                    <hr>
-                </div>
-
-                <!--12 block-->
-                <a class="anchor" id="12"></a>
-                <div class="text-block">
-                    <span class="main-title">12. Harvest<br></span>
-                    <hr>
-                    <span class="sub-title">General<br></span>
-                    <span class="text-content">
-                        <p>
-                            <br>Every week on Friday COO shares with Project Managers <a href="https://docs.google.com/spreadsheets/d/1BJjB-rKZ-JvsC1xAS9rC4euffw7JR9VTGS7vw6j1C98/"><u>empty table</u></a> named “Harvest”. It is a basic financial report for completed tasks on the current calendar week. It contains all projects that Join.To.IT works on.
-                        </p>
-                    </span>
-                    <span class="sub-title">Details</span>
-                    <span class="text-content">
-                        <p><br>Project Manager is supposed to do the following steps:</p>
-                        <ol>
-                            <li>If there is no project that we were working on the current week, you should add one more line to the table considering the correct format and create new weekly table kind of <a href="https://docs.google.com/spreadsheets/d/1vg58OoCU7PweIpuAwy619K2zS3G3l-ppgJwj3SX4c0w"><u>this one</u></a>;</li>
-                            <li>If there is a project, open the link of previous weekly report and copy it in the same folder “Harvests” and enable the option “Share it with same people”;</li>
-                            <li>Name the table as “<code>[Project name] (Week [week #] - [year])</code>”, e.g. “<code>Everworks ERP (Week 31 - 2019)</code>”;</li>
-                            <li>Fill tasks that are done and the client can review on the server (or on the build if that the task is related to the mobile application) from 10 folders (important!);</li>
-                            <li>Make sure that the client has access to the table. Give him direct access for commenting via email. Tables should not be shared as <b>“Anyone with the link can view”</b>;</li>
-                            <li>Put total hours from the table and input it in general Harvest table in column “Hours”;</li>
-                            <li>In the end, all your projects should be filled in. If there is nothing to get paid for you should fill in zero hours. Filled Harvest looks like <a href="https://docs.google.com/spreadsheets/d/1V176AVjDEv65-ajZHoARtwiRR_qoJVjkbcj0xAUPL1Q"><u>this</u></a>.</li>
-                        </ol>
-                        <p>It is preferable that all information has to be submitted by the end of Friday of the reporting week. 
-                        <br><b>The deadline is 11 AM next Monday</b> but you know that on Monday morning there are a lot of other tasks so manage your time wisely.</p>
-                    </span>
-                    <hr>
-                </div>
-
-                <!--13 block-->
-                <a class="anchor" id="13"></a>
-                <div class="text-block">
-                    <span class="main-title">13. Planning QA Meeting</span>
-                    <hr>
-                    <span class="text-content">
-                        <p>
-                            Every week on Friday COO and QA Lead plan work of QA department. On Thursday or Friday Planning QA Meeting takes place. There Project Managers discuss with COO what projects and milestones they are going to give to QA next week.
-                            <br>Project Managers are supposed to prepare the following things what means that you are ready for the meeting:
-                            <ol>
-                                <li>List of projects that are necessary to test out on the next week;</li>
-                                <li>Approximate time of testing (you should discuss it with QA Lead and QA engineer who is supposed to test the project before);</li>
-                                <li>List of projects that are not necessary to test yet, but it is possible to do that;</li>
-                                <li>Cards in Trello for both types of projects should be marked with the label “wk[week#]” where [week#] is the number of the next week e.g. “wk31”;</li>
-                                <li>Pay attention that if you say that on Wednesday 10 AM you will transfer to QA project X with cards A, B, C - you will have to do that or if it is not possible because of an acceptable reason, you have to warn COO and QA Lead in advance (at least 24 hours) so it will be possible to transfer another project to QA.</li>
-                            </ol>
-                        </p>
-                    </span>
-                    <hr>
-                </div>
-
-                <!--14 block-->
-                <a class="anchor" id="14"></a>
-                <div class="text-block">
-                    <span class="main-title">14. Risk Management</span>
-                    <hr>
-                    <span class="text-content">
-                        <p>
-                            Risk management is a very complicated subject and you have to learn some material yourself but there are basic actions that will help you prevent many issues in the future.
-                            <ol>
-                                <li>When you gave a developer any task there is a sense to check what is the status in the midday. It may help you to detect problems much earlier. Usually, developers struggling to solve complicated problems themselves but sometimes they are not capable of. But if you find it out, you will be able to ask for the assistance of other developers or CTO in the worst case.</li><br>
-                                <li>You should always check that your developers have tasks at least for the next 2 weeks. In case if not you will have enough time to prepare documentation, estimate tasks and get approval from client or give developer to another PM but this is not preferable. Always let COO know about such kind of situations.<br></li><br>
-                                <li>Track how the development team goes through the set sprint. In the case of 2 weeks sprint, on Friday of 1st week, 50% of tasks should be done. Is it true? If yes, no worries. If no - you will know that there is a problem and have a chance to solve it.</li><br>
-                                <li>You promised to prepare scope of milestones for QA session but it seems like you will not be able to do that in-time or if full scope? Shit happens, but let QA Lead know about this, together you will find a way from the situation.</li><br>
-                            </ol>
-                        </p>
-                    </span>
-                    <hr>
-                </div>
-
-
-
-            </div>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-lg-2 d-none d-lg-block bg-dark sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a href="#1" class="nav-link">1. Who is a PM at Join.To.IT</a></li>
+            <li class="nav-item"><a href="#2" class="nav-link">2. Trello</a></li>
+            <li class="nav-item"><a href="#3" class="nav-link">3. Redmine</a></li>
+            <li class="nav-item"><a href="#4" class="nav-link">4. Kickoff Checklist</a></li>
+            <li class="nav-item"><a href="#5" class="nav-link">5. Estimates</a></li>
+            <li class="nav-item"><a href="#6" class="nav-link">6. Kickoff Meeting</a></li>
+            <li class="nav-item"><a href="#7" class="nav-link">7. Sprints</a></li>
+            <li class="nav-item"><a href="#8" class="nav-link">8. Stand-Ups</a></li>
+            <li class="nav-item"><a href="#9" class="nav-link">9. Reports</a></li>
+            <li class="nav-item"><a href="#10" class="nav-link">10. Reviews</a></li>
+            <li class="nav-item"><a href="#11" class="nav-link">11. Prepare for Testing</a></li>
+            <li class="nav-item"><a href="#12" class="nav-link">12. Harvest</a></li>
+            <li class="nav-item"><a href="#13" class="nav-link">13. Planning QA Meeting</a></li>
+            <li class="nav-item"><a href="#14" class="nav-link">14. Risk Management</a></li>
+          </ul>
         </div>
+      </nav>
+
+      <div class="offset-lg-3 col-lg-8">
+
+        <div>
+          <a class="anchor" id="1"></a>
+          <div class="card">
+            <div class="card-header">
+              1. Who is a PM at Join.To.IT
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                General
+              </h5>
+              <p class="card-text">
+                <p>The role of the Project Manager in JTI is to ensure that projects are delivered smoothly on-time and on-budget with minimal unexpected stoppages and risk in work.</p>
+                <p>Imagine that you are the client who requested service from Join.To.IT. Would you like to know what has been done so far on your project? Would you like to see updates on a server and don’t have any issues? Would you like to pay for a great job and give us more and more projects if you are satisfied with our service? I believe, yes.</p>
+                <p>Imagine that you are a developer managed by a PM. Would you like to get clear tasks and see feedback on each completed milestone? Would you like to get answers on your questions ASAP? Again, yes.</p>
+                <p>Project Manager is something like a filter between a client and developers in order to get tasks, describe them and provide to developers. Also, PM is a filter on the other side, when a project is going to be shown to a client, PM should take a look on completed tasks and give to a client only those things that are done accordingly to requirements.</p>
+                <p>You are not the only person who is interested in the realization of a project, but in order to get the project done, you should become the one who is most interested in that. Neither developers nor clients owe you anything. You should be the one who is supposed to beat the crap out them to finish a project. Developers are able to ignore you, but you should make them bring you the result. Clients also may ignore your requests but you have to get a project done so exploit them as they are your employees. You should complete the project at any effort.
+                </p>
+
+                <h5 class="card-title">
+                  Details
+                </h5>
+                <p class="card-text">
+                  <p>In general PM’s duties are:</p>
+                  <p>
+                    <ol>
+                      <li>To report to client every day according to format (read #9. Reports);</li>
+                      <li>To run morning stand-ups with a team (read #8. Stand-Ups); </li>
+                      <li>To set up a sprint for all projects (read #7. Sprints);</li>
+                      <li>To make project review minimum 1 time per week (read #10. Reviews);</li>
+                      <li>To prepare projects for QA testing according to requirements and within time scales (read #11. Preparation of a Project for Testing); </li>
+                      <li>To move cards in Trello in order to keep boards in actual state;</li>
+                      <li>To attend weekly PM-QA meetings;</li>
+                      <li>To collect project requirements constantly:
+                        <ul>
+                          <li>Make XD prototypes and putting comments there;</li>
+                          <li>Update requirements as soon as possible once they are changed; </li>
+                          <li>Add all materials to one folder in Gdrive;</li>
+                          <li>Prepare required workflow models, mind-maps, users roles structure etc;</li>
+                        </ul>
+                      </li>
+                      <li>To present the project to the team when starting it (read #6. Kickoff Meeting)</li>
+                      <li>Preventing risks, when they are evident </li>
+                      <li>Collecting project estimations from developers and get it confirmed by COO </li>
+                      <li>Setting up environment when project begins: Trello/RocketChat/Redmine/Gdrive Folder </li>
+                      <li>Stick to deadlines of projects</li>
+                      <li>Collecting Harvest files every Friday until 23:59 (read #12. Harvest)</li>
+                    </ol>
+                  </p>
+                </p>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="2"></a>
+          <div class="card">
+            <div class="card-header">
+              2. Trello
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                General
+              </h5>
+              <p class="card-text">
+                Trello is a great tool dedicated to making project management easier. It allows to quickly understand what is the status of the project, every team member knows what he/she is supposed to do. Trello is based on principles of Kanban and it is very easy to use. In “Details” there is a description of what columns we have in JTI to manage projects and each column has description of what content it should consist of.
+              </p>
+              <h5 class="card-title">
+                Details
+              </h5>
+              <p class="card-text">
+                <p>Each Trello board should contain the following columns:</p>
+                <p style="font-style: italic">Take into consideration if you want to add some column needed for your job - you are free to do that, but columns listed below are a must.</p>
+                <p>
+                  <ol>
+                    <li><b>Backlog</b> - here we store cards are postponed to next sprints.</li>
+                    <li><b>Sprint</b> <i>(2 weeks or 1 week, depends on a project)</i> -  after the creation of a sprint with a team you have to move cards from <u>Backlog</u> or <u>Need to Fix</u> to this column. Before starting of Sprint you have to fill all related requirements to the card so a developer will know the exact task.</li>
+                    <li><b>In process</b> - once a developer starts work on some task, he has to take a card from <u>Sprint</u> in this column.</li>
+                    <li><b>Review by PM</b> - after completion of a task a developer is supposed to move the card from <u>In Process</u> here. As soon as possible you have to review cards from here and move them to the next column or back to Sprint if it is not done accordingly to requirements and describe what is wrong.</li>
+                    <li><b>Preparation for QA</b> - after successful review you are able to store completed tasks in this column and once it will make sense to test the scope of milestones - move them from here to the next column.</li>
+                    <li><b>Ready for QA</b> - here should be only tasks reviewed by you as Project Manager, with full and actual requirements, deployed to test server and ready for QA engineers to check everything deeply. </li>
+                    <li><b>Testing in Process</b> - QA engineers will take cards from Ready for QA and move them here when they are testing those cards. Depends on the result of testing they will move cards in the next two columns.</li>
+                    <li><b>Need to fix</b> - in case if functionality related to a card works not correctly, the card will be moved here by QA engineers.</li>
+                    <li><b>Ready for Acceptance Testing</b> - here QA engineers put cards that have been tested out and the verdict is positive (functionality works according to requirements) and once the whole project cards will be here - it is time to test the whole project (acceptance testing).</li>
+                    <li><b>Confirmed by QA</b> - after acceptance testing cards will be moved here in case of positive results of testing. Otherwise, cards will be moved to Need to Fix and once the whole project is debugged, it will be needed to make one more session of acceptance testing and we will have as many iterations as needed in order to have zero bugs on the project.</li>
+                  </ol>
+                </p>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="3"></a>
+          <div class="card">
+            <div class="card-header">
+              3. Redmine
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                General
+              </h5>
+              <p class="card-text">
+                Redmine is a good tool in order to manage projects at all, but we use it as bug-tracker.
+              </p>
+              <h5 class="card-title">
+                Details
+              </h5>
+              <p class="card-text">
+                <p><b>Creation of a Project</b></p>
+                <p> Depends on a type of a project there are three ways of creating the project in Redmine:
+                  <ul>
+                    <li>Web application</li>
+                    <li>Mobile application</li>
+                    <li>API</li>
+                  </ul>
+                </p>
+                <p>
+                  If a project consists of multiple types of projects listed above then you should create 1 parent project and 1 or 2 subprojects. For example, a project consists of web application, mobile app and api for mobile application and the main part is a mobile app. Anyway we count web project as main one so you have to create parent project with settings of web app projects and two subprojects, one for API and one for mobile application with related settings. Settings for each type are described below.
+                </p>
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th>Project</th>
+                        <th>Modules</th>
+                        <th>Trackers</th>
+                        <th>Custom Fields</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Web Application</td>
+                        <td>
+                          <ul>
+                            <li>Issue tracking</li>
+                            <li>Documents</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Bug</li>
+                            <li>Ticket</li>
+                            <li>Review</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Link to page with bug</li>
+                            <li>Environment 1</li>
+                            <li>Environment 2</li>
+                            <li>Environment 3</li>
+                            <li>Type list</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Mobile Application</td>
+                        <td>
+                          <ul>
+                            <li>Issue tracking</li>
+                            <li>Documents</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Bug</li>
+                            <li>Ticket</li>
+                            <li>Review</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Environment 1</li>
+                            <li>Environment 2</li>
+                            <li>Environment 3</li>
+                            <li>Build iOS</li>
+                            <li>Build Android</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>API</td>
+                        <td>
+                          <ul>
+                            <li>Issue tracking</li>
+                            <li>Documents</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Bug</li>
+                            <li>Ticket</li>
+                            <li>Review</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Method</li>
+                            <li>Request URL</li>
+                            <li>API doc link</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p><b>Modules</b></p>
+                <p><i><u>Issue tracking</i></u> - module that is dedicated to create issues and work on them, basically it is the main functionality of Redmine.</p>
+                <p><i><u>Documents</i></u> - here you are supposed to add all documents related to a project, add links to all servers and credentials for test users, links to prototype, workflow model, history of builds, design files etc.</p>
+
+                <p><b>Trackers</b></p>
+                <p><i><u>Bug</i></u> - it is tracker where issues are created by QA engineers, bugs can be assigned to developers in order to have them fix assigned issues; to PM in case to clarify requirements; to client in order to get his reply.</p>
+                <p><i><u>Ticket</i></u> - it is a tracker for clients, they can create issues only in this tracker.</p>
+                <p><i><u>Review</i></u> - it is a tracker for PM in order to create issues detected during review of completed tasks.</p>
+
+                <p><b>Statuses of Issues</b></p>
+                <ol>
+                  <li><b>New</b> - all issues once created should have this status in case if it is not a pending question, then the issue should have status <u>Waiting for response</u>.</li>
+                  <li><b>In Progress</b> - if the issue take much time (more than 1hr) to be fixed a developer has to put this status during fixing it.</li>
+                  <li><b>Waiting for response</b> - if there are any questions that require answers, the issue should be created with this status or if someone needs additional information in order to resolve the issue he/she is able to put this status and assign it to a person who is capable of giving an answer.</li>
+                  <li><b>Resolved</b> - after a developer get the issue fixed he is supposed to put this status and assign to person who has to check it.</li>
+                  <li><b>Duplicate</b> - if there is another same issue team member should put this status and add link to related issue that has been duplicated and reassign back to creator or needed person.</li>
+                  <li><b>Not a bug</b> - if the issue is not a bug, a developer should put this status, explain why and assign to PM. Then PM have to confirm it and assign the issue to QA or not confirm, assign responsible developer and explain why.</li>
+                  <li><b>Additional Work</b> - if the issue is not a bug but by your opinion, it would be great to implement the feature, use this status and assign to a client to get his approval.</li>
+                  <li><b>Re-open</b> - if you or QA checked resolved issue and it is not fixed properly, this status is used, the number of re-opens of the issue should be increased by 1 (there is such a field in Redmine) and responsible developer should be assigned back to it.</li>
+                  <li><b>Confirmed by QA</b> - once QA has tested resolved issue and it is fixed - he will put this status.</li>
+                  <li><b>Closed</b> - once you have checked an issue from trackers Review or Ticket and it is resolved - put this status.</li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="4"></a>
+          <div class="card">
+            <div class="card-header">
+              4. Kickoff Checklist
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                General
+              </h5>
+              <p class="card-text">
+                Before the start of any project there are required steps that Project Manager is supposed to pass. It contains a lot of general steps as well as technical requirements kind of configurations of server, time zone of users etc. This practice allows us to prevent many issues that will appear in future related to development and customer relations.
+                <br><br><b>Current revision of the checklist is v1.1</b>
+              </p>
+              <h5 class="card-title">
+                Details
+              </h5>
+              <p class="card-text">
+                There are two types of projects that we develop: web and mobile applications. API is optional and it is possible to have them in both types or also it is possible to not develop API at all. There are some differences in preparational steps so we have created two separate checklists.
+                <br>Depends on a type of a project, go to the following links and copy needed list. If the project consists of both web and mobile application then combine both documents.
+                <br><a href="https://docs.google.com/spreadsheets/d/1goeDhTx5RwKdK1kpDjiB-3NJPjZR2q6oOVMC-tyjOd8/" target="_blank"><u>Web applications checklist</u></a>
+                <br><a href="https://docs.google.com/spreadsheets/d/1goeDhTx5RwKdK1kpDjiB-3NJPjZR2q6oOVMC-tyjOd8/edit#gid=1200214743/" target="_blank"><u>Mobile applications checklist</u></a>
+                <br>If we don’t need some steps of checklist in your project - just put status “TRUE” and in column “Information” input that we don’t need it.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="5"></a>
+          <div class="card">
+            <div class="card-header">
+              5. Estimates
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                General
+              </h5>
+              <p class="card-text">
+                You will be asked to get some projects estimated. There are two options: rough estimate and precise estimate. A task of Project Manager is to assign related developers and it is preferred to ask developers that are supposed to work on the project they estimate.
+              </p>
+              <h5 class="card-title">
+                Details
+              </h5>
+              <p class="card-text">
+                Usually, rough estimates are for projects where we don’t know the exact requirements and client just wants to know the approximate price for his project. It is better to have big tasks here from 16 to 80 hours.
+                <br>Precise estimates are for cases when we know exact requirements or at least detailed description. Tasks should be from 1 to 16 hours, as smaller hours per tasks as better.
+                <br>
+                <br>After getting an estimate from developers it is required to get approval from COO or if it is not possible then from CEO or CTO. They will check the adequacy of estimation and create an estimate for the client depends on the hourly rate of developers and the hourly rate of the client.
+                <br>
+                <br>Developers’ estimates are only for developers and they should be located in GDrive:
+                <br><code>7. Project Files/[Current year]/[Current month]/[Project Name]</code></p>
+                Clients estimates are located in another folder:
+                <br><p><code>10. Project Files for Clients/[Current year]/[Current month]/[Project Name]</code></p>
+                Clients should not know about devs’ estimate and devs should not know about the client's estimate.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="6"></a>
+          <div class="card">
+            <div class="card-header">
+              6. Kickoff Meeting
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                General
+              </h5>
+              <p class="card-text">
+                The purpose of a project kickoff meeting is to introduce the team, understand the project background, understand what success looks like, understand what needs to be done, and agree on how to work together effectively – it’s a chance to level set and get the team and client on the same page.
+              </p>
+              <h5 class="card-title">
+                Details
+              </h5>
+              <p class="card-text">
+                In order to prevent unexpected issues during development it is required to have a meeting with developers, CTO and CEO or COO to discuss the purpose of the project and choose the main ways of development and to discuss possible roadblocks.
+
+                <br>Checklist of what items members of the meeting should walkthrough:
+                <ol>
+                  <li>Present a project business idea to the team;</li>
+                  <li>Present materials that we have (documentation, design etc);</li>
+                  <li>Assign team members to their role on the project (who does what and what is responsible for, for example - Team Lead is Oleksii Kuharenko, he doesn’t develop anything but review code of developers and approve commits in git; Front-end developer is Oleksii Kupin, Back-end developer is Roman Sheverun);</li>
+                  <li>Walkthrough the <b>Kick-off Check-List</b>;</li>
+                  <li>Discuss project architecture (DB structure, order of development of modules, order of development of front-end and back-end).</li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="7"></a>
+          <div class="card">
+            <div class="card-header">
+              7. Sprints
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                General
+              </h5>
+              <p class="card-text">
+                For each project, it should be either offline meeting with a WHOLE team of developers or call via Skype/Zoom/etc. PM has to create table with planned tasks and add related to sprint cards to Trello in column Sprint. Adding cards to Trello w/o meeting with a team will not be treated as completed Sprint. Meeting must be 20-40 minutes, no longer. On a meeting preferable to present also COO and CTO/CEO if you feel that you have serious issues on a project. Manage this risk yourself.
+              </p>
+              <h5 class="card-title">
+                Details
+              </h5>
+              <p class="card-text">
+                Sprint is 2 business weeks (though can differ, depending on a project and client requirements). Every week is 40 hours. So one developer should work 80 hours during all sprint.
+                <br>
+                <br>We understand that developers can’t do coding all 80 hours, that’s why we give such a plan:
+                <br>~ 80% of time dev does coding
+                <br>~ 15% of time dev fixes bugs
+                <br>~ 5% of time goes for stand-up meetings, discussions, participation in interview etc.
+                <br>
+                <br>In numbers devs will spend during sprint:
+                <br>~ 64 hours for coding (80%)
+                <br>~ 12 hours for fixing bugs
+                <br>~ 4 hours for stand-up meetings, discussions etc.
+                <br>Proportions can slightly change from time to time
+                <br>
+                <br>In numbers during the day you will spend:
+                <br>~ 6.4 hours for coding (80%)
+                <br>~ 1.2 hours for fixing bugs
+                <br>~ 0.4 hours for stand-up meetings, discussions etc.
+                <br>Proportions can slightly change from time to time
+                <br>
+                <br>The task of project manager is to oversee that team is completing tasks due to date and the sprint is still achievable. In the end of the first week it is needed to make a check-point meeting where should be at least one top-manager (CEO/CTO/COO) and project team. If the sprint is shorter and equals 1 week - do your checkpoint on Wednesday mornings.  There you are supposed to present what tasks has been planned to be completed, actual completed tasks and reasons why we do it slower or faster if it is the case.
+                <br>
+                <br>At the end of the last sprint week it is required to make retrospective meeting of whole sprint and basically discuss the same questions that on the first week meeting and also create sprint for next 2 weeks.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="8"></a>
+          <div class="card">
+            <div class="card-header">
+              8. Stand-ups
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                General
+              </h5>
+              <p class="card-text">
+                The stand-up meeting is a delicately nuanced method of project management disguised as a daily reminder that your legs work. A truly effective stand-up requires preparation, experimentation, and motivation.
+              </p>
+              <h5 class="card-title">
+                Steps
+              </h5>
+              <p class="card-text">
+                <ol>
+                  <li>You should call to yourself a team that is assigned to the project and/or make a phone/Skype/etc conversation if the team works remotely.</li>
+                  <li>Stand-up meetings must be held starting from 10:30 am and not later</li>
+                  <li>Stand-ups should be conducted standing</li>
+                  <li>
+                    Track Progress:
+                    <ul>
+                      <li>Check yesterday’s to-do list;</li>
+                      <li>Ask developers what was the progress;</li>
+                      <li>Ask what difficulties did they meet? Write down what you have to get known from clients or other parties;</li>
+                      <li>Prepare a to-do list for today;</li>
+                      <li>Move cards in Trello to a needed column in order to keep the board in an actual state.</li>
+                    </ul>
+                  </li>
+                  <li>Repeat everything with all teams on projects you are working on</li>
+                  <li>In mid of day (e.g. 15:00) go to the team and ask how do they progress and help in solving some issues</li>
+                  <li>At the end of the day remind developers to write reports.</li>
+                  <li>Stand-up meeting cannot last more than 10 minutes per project. All discussion must be held after the stand-up meeting during the day. Strictly follow instructions of meeting.</li>
+                </ol>
+              </p>
+              <h5 class="card-title">
+                Tips
+              </h5>
+              <p class="card-text">
+                <ol>
+                  <li>Look at the video where our colleagues from IBM Agile Academy show an example of a good way of holding stand-ups</li>
+                  <br><iframe width="95%" height="400px" src="https://www.youtube.com/embed/GzQjGhD5tSU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+                  <li>At the end of the meeting, you have an opportunity to energize team members before they return to work. Share a good natured joke, a motivational quote, or even come up with your own signature sign-off.</li>
+                  <li>Stick to these three questions:
+                    <ul>
+                      <li>What has a recently accomplished?</li>
+                      <li>What are my in-progress tasks and/or plans?</li>
+                      <li>What obstacles are impeding my progress?</li>
+                    </ul>
+                  </li>
+                  <li>Stay Focused. Every stand-up needs a leader. The person who facilitates the stand-up must balance time-awareness and flexibility.</li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="9"></a>
+          <div class="card">
+            <div class="card-header">
+              9. Reports
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                General
+              </h5>
+              <p class="card-text">
+                Project Manager have to send reports to clients every work day or rarer if it is approved by the COO and discussed with a client but not rarer than 2 times per week.
+              </p>
+              <h5 class="card-title">
+                Template of a report
+              </h5>
+              <p class="card-text">
+                [# of milestone]. [name of milestone] - [status of the task in percents]
+                <br>[# of bug]. [name of bug] - [status of the task in percents]
+                <br>
+                <br>If report sent rarer than every day, then you also have to add 2-3 sentences of description, what exactly was included in those milestones. For example, you can describe back-end tasks, what API endpoints are related to it etc.
+              </p>
+            </span>
+            <span class="sub-title">What if we didn't work with the project, but it is time to send a report?<br></span>
+            <span class="text-content">
+              <p>Unfortunately, this case is a common one so you should be prepared. We have no other choice as to send fake report, for example, you can say to client that some milestone is ready on 20% and we make refactoring of code. But be very careful with it, it is a last measure, it would be great to find another solution to provide our clients some progress.
+                <br>
+                <br>Take into consideration that as more a client is satisfied as more money he will pay what means higher salaries, better equipment, new office and free pizza on Fridays</p>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="10"></a>
+          <div class="card">
+            <div class="card-header">
+              10. Reviews
+            </div>
+            <div class="card-body">
+              <p class="card-title">
+                This guide explains how Project Manager must review project before bypassing it for salary approval, QA testing or any other stage.
+              </p>
+              <h5 class="card-title">
+                Web Projects
+              </h5>
+              <p class="card-text">
+                <ol>
+                  <li>check web page functionality. Make sure that it works according to the requirements</li>
+                  <li>
+                    check more than requirements. Check best practices and be smart:
+                    <ul>
+                      <li>make sure that input fields have validation (email validation, mobile phone format validation etc.)</li>
+                      <li>make sure that project follows the workflow model</li>
+                      <li>check how all dynamic content works, especially the calculation of numbers, rates etc.</li>
+                    </ul>
+                  </li>
+                  <li>pay attention at speed of page loading. It shouldn’t be longer than 2-4 sec</li>
+                  <li>check PSD graphic mockup with original page. It must be pixel perfect (on resolution that is equal to design) and responsive on all screens (360, 1366). Make sure that you check web page on the same screen size in emulator as you have in PSD mockup or in tools like Zeplin, Invision, Sketch, XdAdobe etc.</li>
+                </ol>
+              </p>
+              <h5 class="card-title">
+                Mobile App Projects
+              </h5>
+              <p class="card-text">
+                <ol>
+                  <li>check mobile app functionality and make sure that it works according to requirements</li>
+                  <li>
+                    check more than requirements. Check best practices and be smart:
+                    <ul>
+                      <li>make sure that input fields have validation (email validation, mobile phone format validation etc.)</li>
+                      <li>make sure that project follows the workflow model</li>
+                      <li>check how all dynamic content works, especially the calculation of numbers, rates etc.</li>
+                    </ul>
+                  </li>
+                  <li>pay attention at speed of screen loading. It shouldn’t be longer than 2-4 sec</li>
+                  <li>check how app looks on a Landscape view and Book view (if it is available). Same on mobile phone and tablet device (if it is part of the scope)</li>
+                  <li>check PSD graphic mockup with original page. It must be pixel perfect (on resolution that is equal to design) and responsive on all screens (360, 1366). Make sure that you check web page on the same screen size in emulator as you have in PSD mockup or in tools like Zeplin, Invision, Sketch, XdAdobe etc.</li>
+                </ol>
+                <p><b>You must review all project (!) Not only one page. Every week you one time review all pages of your project. Doesn’t matter if they were done and perfect on previous check<br></b></p>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id=11></a>
+          <div class="card">
+            <div class="card-header">
+              11. Preparation of a Project for Testing
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                General
+              </h5>
+              <p class="card-text">
+                QA is one of the most important processes in the development of any project. According to Wikipedia’s quality assurance definition, it’s “a way of preventing mistakes or defects in manufactured products and avoiding problems when delivering solutions or services to customers.” There’s more to QA than this, however. Here are just a few of the numerous benefits a QA team can bring:
+                <ul>
+                  <li>QA teams help meet clients’ demands and expectations most fully</li>
+                  <li>They build trust with customers and beat the competition in the long run by producing a better product</li>
+                  <li>They save costs by detecting and fixing issues and flaws early in development</li>
+                  <li>They assist in setting and maintaining high quality standards and shift focus from detecting issues to their prevention</li>
+                </ul>
+              </p>
+              <h5 class="card-title">
+                Details
+              </h5>
+              <p class="card-text">
+                <b>Trello</b>
+                <ol>
+                  <li>
+                    Depends on the readiness of project documentation there are two ways:
+                    <ul>
+                      <li>In case if there is no documentation at all or the documentation is not enough detalized - you should fill requirements in each card that will fully describe how the functionality related to the card is supposed to work.</li>
+                      <li>In case if we have good documentation - just put in each card link to related page in documentation.</li>
+                    </ul>
+                  </li>
+                  <li>Make sure that correct developer(s) are assigned to cards you are going to give to QA.</li>
+                  <li>Add URL link to server in each card with related functionality so QA will know exactly where to find the functionality.</li>
+                  <li>Add comment “Reviewed by PM” in each card just to know that you have been reviewing the functionality.</li>
+                  <li>After everything of above is done - move needed cards to column <u>Ready for QA</u></li>
+                </ol>
+                <p><b>Redmine</b></p>
+                <ol>
+                  <li>Add project documentation to “Documents” section in the project:
+                    <ul>
+                      <li>Link to XD prototype;</li>
+                      <li>Link to doc file with general purpose of the project, roles and their structure;</li>
+                      <li>Link to workflow model (if exists);</li>
+                      <li>Graphic design (if used);</li>
+                      <li>Template theme (if used).</li>
+                    </ul>
+                  </li>
+                  <br><li>
+                    Add credentials:
+                    <ul>
+                      <li>URL Link to test server (for web projects);</li>
+                      <li>Name of the latest builds for iOS and Android (for mobile projects). Note: Add this info to section "Builds - History of Ver.";</li>
+                      <li>Credentials to Mailtrap (if used);</li>
+                      <li>Credentials to Stripe (if used);</li>
+                      <li>Credentials to other third party services (if used).</li>
+                    </ul>
+                  </li>
+                  <br><li>
+                    Add testing requirements:
+                    <ul>
+                      <li>Cross-browser compatibility (list of browsers);</li>
+                      <li>Adaptive layout (min-max screen resolution);</li>
+                      <li>Testing environment (list of devices).</li>
+                    </ul>
+                  </li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="12"></a>
+          <div class="card">
+            <div class="card-header">
+              12. Harvest
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                General
+              </h5>
+              <p class="card-text">
+                Every week on Friday COO shares with Project Managers <a href="https://docs.google.com/spreadsheets/d/1BJjB-rKZ-JvsC1xAS9rC4euffw7JR9VTGS7vw6j1C98/"><u>empty table</u></a> named “Harvest”. It is a basic financial report for completed tasks on the current calendar week. It contains all projects that Join.To.IT works on.
+              </p>
+              <h5 class="card-title">
+                Details
+              </h5>
+              <p class="card-text">
+                Project Manager is supposed to do the following steps:
+                <ol>
+                  <li>If there is no project that we were working on the current week, you should add one more line to the table considering the correct format and create new weekly table kind of <a href="https://docs.google.com/spreadsheets/d/1vg58OoCU7PweIpuAwy619K2zS3G3l-ppgJwj3SX4c0w"><u>this one</u></a>;</li>
+                  <li>If there is a project, open the link of previous weekly report and copy it in the same folder “Harvests” and enable the option “Share it with same people”;</li>
+                  <li>Name the table as “<code>[Project name] (Week [week #] - [year])</code>”, e.g. “<code>Everworks ERP (Week 31 - 2019)</code>”;</li>
+                  <li>Fill tasks that are done and the client can review on the server (or on the build if that the task is related to the mobile application) from 10 folders (important!);</li>
+                  <li>Make sure that the client has access to the table. Give him direct access for commenting via email. Tables should not be shared as <b>“Anyone with the link can view”</b>;</li>
+                  <li>Put total hours from the table and input it in general Harvest table in column “Hours”;</li>
+                  <li>In the end, all your projects should be filled in. If there is nothing to get paid for you should fill in zero hours. Filled Harvest looks like <a href="https://docs.google.com/spreadsheets/d/1V176AVjDEv65-ajZHoARtwiRR_qoJVjkbcj0xAUPL1Q"><u>this</u></a>.</li>
+                </ol>
+                <p>It is preferable that all information has to be submitted by the end of Friday of the reporting week.
+                  <br><b>The deadline is 11 AM next Monday</b> but you know that on Monday morning there are a lot of other tasks so manage your time wisely.
+                </p>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="13"></a>
+          <div class="card">
+            <div class="card-header">
+              13. Planning QA Meeting
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Every week on Friday COO and QA Lead plan work of QA department. On Thursday or Friday Planning QA Meeting takes place. There Project Managers discuss with COO what projects and milestones they are going to give to QA next week.
+                <br>Project Managers are supposed to prepare the following things what means that you are ready for the meeting:
+                <ol>
+                  <li>List of projects that are necessary to test out on the next week;</li>
+                  <li>Approximate time of testing (you should discuss it with QA Lead and QA engineer who is supposed to test the project before);</li>
+                  <li>List of projects that are not necessary to test yet, but it is possible to do that;</li>
+                  <li>Cards in Trello for both types of projects should be marked with the label “wk[week#]” where [week#] is the number of the next week e.g. “wk31”;</li>
+                  <li>Pay attention that if you say that on Wednesday 10 AM you will transfer to QA project X with cards A, B, C - you will have to do that or if it is not possible because of an acceptable reason, you have to warn COO and QA Lead in advance (at least 24 hours) so it will be possible to transfer another project to QA.</li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="14"></a>
+          <div class="card">
+            <div class="card-header">
+              14. Risk Management
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Risk management is a very complicated subject and you have to learn some material yourself but there are basic actions that will help you prevent many issues in the future.
+                <ol>
+                  <li>When you gave a developer any task there is a sense to check what is the status in the midday. It may help you to detect problems much earlier. Usually, developers struggling to solve complicated problems themselves but sometimes they are not capable of. But if you find it out, you will be able to ask for the assistance of other developers or CTO in the worst case.</li><br>
+                  <li>You should always check that your developers have tasks at least for the next 2 weeks. In case if not you will have enough time to prepare documentation, estimate tasks and get approval from client or give developer to another PM but this is not preferable. Always let COO know about such kind of situations.</li><br>
+                  <li>Track how the development team goes through the set sprint. In the case of 2 weeks sprint, on Friday of 1st week, 50% of tasks should be done. Is it true? If yes, no worries. If no - you will know that there is a problem and have a chance to solve it.</li><br>
+                  <li>You promised to prepare scope of milestones for QA session but it seems like you will not be able to do that in-time or if full scope? Shit happens, but let QA Lead know about this, together you will find a way from the situation.</li><br>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
+
+  </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
